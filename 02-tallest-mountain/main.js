@@ -9,3 +9,15 @@
 */
 
 // YOUR CODE HERE
+let MountainsHeight = [400, 1200, 5000, 200];
+let TallestMountain = 0;
+let index = 0;
+
+while (index < MountainsHeight.length) {
+  if (TallestMountain < MountainsHeight[index]) {
+    TallestMountain = MountainsHeight[index];
+  }
+  console.log(MountainsHeight[index]);
+  index = index + 1;
+}
+console.log("The Tallest Mountain is " + TallestMountain);

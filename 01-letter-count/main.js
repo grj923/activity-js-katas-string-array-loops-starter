@@ -20,3 +20,21 @@
 */
 
 // YOUR CODE HERE
+let word = "phillipines";
+let letter = "t";
+let letterCount = 0;
+let index = 0;
+
+while (index < word.length) {
+  if (letter === word[index]) {
+    letterCount = letterCount + 1;
+  }
+  index = index + 1;
+}
+if (letterCount >= 1) {
+  console.log(
+    "The letter " + letter + " exists " + letterCount + " times in this word!"
+  );
+} else {
+  console.log("Nope, that letter doesn't exist in my word!");
+}
