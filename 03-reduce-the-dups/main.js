@@ -9,14 +9,16 @@
 */
 // YOUR CODE HERE
 const redundantArray = [1, 1, 2, 3, 3, 4];
-let NewArray = 0;
+let NewArray = [];
 
 let index = 0;
 while (index < redundantArray.length) {
-  let NewArray = NewArray + redundantArray[index];
-  // if () {
+  if (NewArray.includes(redundantArray[index]) === false) {
+    NewArray.push(redundantArray[index]);
+  }
+
   index = index + 1;
 }
 
-console.log(NewArray);
-console.log(redundantArray);
+console.log("New Array " + NewArray);
+console.log("Old Array " + redundantArray);
